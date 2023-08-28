@@ -1,0 +1,17 @@
+body{    
+   background-image: linear-gradient(to right,#0CABA8 ,#0FC2C0);}
+   
+   main{
+    background-color:#07faf621;
+    box-shadow: 5px 5px 15px rgba(135, 108, 92, 0.616);
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+    width: 50%;
+   }
+
+   h1 {
+    color: rgba(160, 160, 217, 0.989);
+    text-align: center;
+    text-shadow: 1px 1px 2px #3c33f188;
+   }
