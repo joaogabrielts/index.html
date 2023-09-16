@@ -8,19 +8,41 @@
     <style>
         fieldset{
             border-radius: 5px 5px 5px 5px;
-        }
-        body{
-          
-        }
+      
     </style>
 </head>
 <body>
     <h1></h1>
-    <form action="" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
-<legend></legend>
-
+<legend>Input de cor</legend>
+<p>
+        <label for="icor">Cor:</label>    
+        <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
         </fieldset>
+
+        <fieldset>
+    <legend>Input de Satisfação</legend>
+    <p>
+        <label for="inivel">Nível de Satisfação</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Input de foto anexada </legend>
+        <label for="ifoto">Foto de perfil</label>
+        <input type="file" name="foto" id="ifoto">
+        
+        
+        
+        </fieldset>
+       
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            
+            </p>
     </form>
 </body>
 </html>
