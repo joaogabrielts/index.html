@@ -2,18 +2,9 @@
 
 /* Aparelho deitado (landscape)*/
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
 
 html, body{
-    width: 100vw;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
     background-image: url('../imagem/cev-landscape.jpg');
-    background-repeat: no-repeat;
     background-position: left bottom;
-  
 }
 
