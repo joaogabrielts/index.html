@@ -6,12 +6,13 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer"class="material-icons" onclick="clickMenu()">menu</span>
-        <menu id="itens" > 
+        <menu id="itens"> 
             <ul> 
                <li ><a href="#" >Opção 1</a></li> 
                 <li><a href="#">Opção 2</a></li> 
@@ -30,9 +31,18 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur maxime impedit quo pariatur quibusdam aliquid officiis non. Consequuntur dolor dicta nisi modi. Aperiam error magnam amet tempore quas autem voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio explicabo quidem nihil vero ex delectus reprehenderit, hic dolorum fuga a, quia molestias nobis sapiente sunt quae commodi illum facilis.
             </p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat adipisci tempore cupiditate doloribus delectus ullam saepe voluptas perspiciatis alias similique recusandae omnis, mollitia reprehenderit tempora. Dolorum quis nihil cupiditate autem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, eum odio earum consequuntur ab facilis inventore quasi excepturi. Porro doloribus rem tempora eaque quidem, magnam voluptates ab qui maxime beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempore quae voluptates odio ratione mollitia, omnis voluptatibus molestiae non eius eos, facere, rem similique placeat quam fugit porro magnam officia!</p>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, quasi culpa. Aut accusamus, hic odio mollitia vel aspernatur laboriosam eaque sunt excepturi, iure eum pariatur ratione temporibus veritatis provident. Officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quis nobis neque fugiat reiciendis quo quaerat sunt, a veritatis quasi magni ipsa dolore velit harum iure corrupti dignissimos? Saepe, excepturi?</p>
         </article>
     </main>
     <script>
+     function mudouTamanho(){
+         if(window.innerWidth >= 768){
+            itens.style.display = 'block'
+         } else{
+            itens.style.display = 'none'
+         }
+     }
+
         function clickMenu() {
        if (itens.style.display == 'block') {
         itens.style.display = 'none'
